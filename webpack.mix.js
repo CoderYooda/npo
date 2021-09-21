@@ -7,10 +7,6 @@ mix.webpackConfig({ node: { fs: 'empty' }});
 
 mix.sass('resources/sass/style.scss', 'public/css').options({ processCssUrls: false });
 
-// mix.sass('resources/sass/style.css', 'public/css');
-
-// mix.copyDirectory('resources/sass/documents', 'public/css/documents');
-
 if( !mix.inProduction() ) {
     mix.webpackConfig({
         devtool:"inline-source-map",
@@ -19,8 +15,7 @@ if( !mix.inProduction() ) {
 }
 
 if(mix.inProduction() ) {
-    // mix.minify('public/js/app.min.js');
-    // mix.minify('public/css/app.css');
-    // mix.minify('public/css/base.css');
+    mix.minify('public/js/index.js');
+    mix.minify('public/css/app.css');
     mix.version();
 }
