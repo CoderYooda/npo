@@ -132,13 +132,12 @@ header .logo{
 
 #order_link{
     margin-top: 100px;
-    overflow: hidden;
     position: relative;
 }
 #order_link:after{
     content: url(./img/lines1.svg);
     position: absolute;
-    top: -49px;
+    top: -256px;
     left: 271px;
     z-index: -122;
 }

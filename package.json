@@ -4,39 +4,32 @@
   "description": "",
   "private": true,
   "dependencies": {
+    "axios": "^0.21.4",
+    "https": "^1.0.0",
     "path": "^0.12.7",
     "sendpulse-api": "^1.1.5"
   },
   "devDependencies": {
+    "cross-env": "^5.1",
     "html-webpack-plugin": "^5.3.2",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.2"
+    "laravel-mix": "^4.0.7",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.42.0",
+    "sass-loader": "^7.3.1",
+    "vue-template-compiler": "^2.6.14"
   },
   "scripts": {
-    "start": "webpack --mode production",
-    "test": "webpack"
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CoderYooda/npo.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CoderYooda/npo/issues"
-  },
-  "resolve": {
-    "fallback": {
-      "crypto": false
-    }
-  },
-  "browser": {
-    "http": false,
-    "https": false,
-    "net": false,
-    "path": false,
-    "stream": false,
-    "tls": false
-  },
-  "homepage": "https://github.com/CoderYooda/npo#readme"
+  "author": "CoderYooda"
 }
