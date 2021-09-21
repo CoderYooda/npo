@@ -12,14 +12,35 @@
 <body>
     <header>
         <div class="container d-flex">
-            <div class="logo flex-1"></div>
-            <ul class="main_menu flex-1">
+            <a class="logo flex-1" href="/">
+            </a>
+
+            <ul id="h_menu" class="main_menu flex-1">
                 <li class="elem"><a href="#about">О нас</a></li>
                 <li class="elem"><a href="#products">Наша продукция</a></li>
                 <li class="elem"><a href="#pallete">Паллетный ящик</a></li>
                 <li class="elem"><a href="#instrumental">Инструментальный ящик</a></li>
                 <li class="elem phone"><a href="tel:+74722506604">+7 4722 506 604</a></li>
             </ul>
+            <div id="hamb">
+                <span class="menu">Меню</span>
+                <div onclick="openMenu()" id="open" class="burg_menu"></div>
+                <div onclick="closeMenu()" id="close" class="cross_menu hide"></div>
+            </div>
+            <div id="mobile_menu" class="hide">
+                <ul class="mobile_menu flex-1">
+                    <li class="elem"><a onclick="closeMenu()" href="#about">О нас</a></li>
+                    <li class="elem"><a onclick="closeMenu()" href="#products">Наша продукция</a></li>
+                    <li class="elem"><a onclick="closeMenu()" href="#pallete">Паллетный ящик</a></li>
+                    <li class="elem"><a onclick="closeMenu()" href="#instrumental">Инструментальный ящик</a></li>
+                    <li class="elem"><a onclick="closeMenu()" href="#instrumental">Сделать заказ</a></li>
+                </ul>
+
+                <div class="m_it"><b>Почта:</b> <a href="mailto:Npo22@bk.ru" class="contact_link">Npo22@bk.ru</a></div>
+                <div class="m_it"><b>Телефон:</b> <a href="tel:+74722506604" class="contact_link">+7 4722 506 604</a></div>
+                <div class="m_it"><b>или</b> <a href="tel:+79997002200" class="contact_link">+7 999 700 22 00</a></div>
+                <div class="m_it"><b>Адрес:</b> <span>Улица Зелёная Поляна, 2А, Белгород</span></div>
+            </div>
         </div>
     </header>
     <section id="order_link">
@@ -376,17 +397,22 @@
                 </div>
                 <div class="flex-1">
                     <div>
-                        <div class="contact">
+                        <div id="h_contacts" class="contact">
                             <b>Почта:</b> <a href="mailto:Npo22@bk.ru" class="contact_link">Npo22@bk.ru</a>
                             <b>Телефон:</b> <a href="tel:+74722506604" class="contact_link">+7 4722 506 604</a>
                             <b>или</b> <a href="tel:+79997002200" class="contact_link">+7 999 700 22 00</a>
+                        </div>
+                        <div id="mobile_contacts" class="contact">
+                            <div><b>Почта:</b> <a href="mailto:Npo22@bk.ru" class="contact_link">Npo22@bk.ru</a></div>
+                            <div><b>Телефон:</b> <a href="tel:+74722506604" class="contact_link">+7 4722 506 604</a></div>
+                            <div><b>или</b> <a href="tel:+79997002200" class="contact_link">+7 999 700 22 00</a></div>
                         </div>
                     </div>
                     <div>
                         <div class="contact">
                             <b>Адрес:</b> <span>Улица Зелёная Поляна, 2А, Белгород</span>
                         </div>
-                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5d2ba4484d780790cc1caa431e27dbbb7fa6378ba9ad38e1ea09ce9e0a62e6b4&amp;source=constructor" width="854" height="282" frameborder="0"></iframe>
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5d2ba4484d780790cc1caa431e27dbbb7fa6378ba9ad38e1ea09ce9e0a62e6b4&amp;source=constructor" width="100%" height="282" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>

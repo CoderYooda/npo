@@ -33,7 +33,18 @@ window.sendMessage = function(sh, v, g, steel, name, phone){
         })
 }
 
-
+window.openMenu = function(){
+    document.getElementsByTagName('body')[0].classList.add('opened');
+    document.getElementById('open').classList.add('hide');
+    document.getElementById('close').classList.remove('hide');
+    document.getElementById('mobile_menu').classList.remove('hide');
+};
+window.closeMenu = function(){
+    document.getElementsByTagName('body')[0].classList.remove('opened');
+    document.getElementById('open').classList.remove('hide');
+    document.getElementById('close').classList.add('hide');
+    document.getElementById('mobile_menu').classList.add('hide');
+};
 //Npo22@bk.ru
 // var answerGetter = function answerGetter(data){
 //     console.log(data);

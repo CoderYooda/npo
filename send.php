@@ -35,8 +35,8 @@ $email = array(
     ),
     'to' => array(
         array(
-            'name' => 'CoderYooda',
-            'email' => 'CoderYooda@gmail.com',
+            'name' => 'NPO',
+            'email' => 'Npo22@bk.ru',
         ),
     )
 );
