@@ -4,8 +4,10 @@
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Изготовление паллетных и инструментальных ящиков на любые типы полуприцепов. Паллетный ящик на полуприцеп за 14 дней 'под ключ'. Индивидуальные размеры. Наличие на складе.">
         <link rel="stylesheet" href="/public/css/style.css">
-        <title>Document</title>
+        <link rel="shortcut icon" href="/favico.svg" type="image/x-icon">
+        <title>Купить паллетный ящик на полуприцеп. Изготовление. Инструментальный ящик для грузовиков.</title>
     </head>
 <body>
     <header>
@@ -270,30 +272,26 @@
                         <div class="d-flex row form_row">
                             <div class="flex-1 col-4">
                                 <label for="width">Ширина</label>
-                                <input type="text" id="width" name="width">
+                                <input type="number" id="width" name="width">
                             </div>
                             <div class="flex-1 col-4">
                                 <label for="height">Высота</label>
-                                <input type="text" id="height" name="height">
+                                <input type="number" id="height" name="height">
                             </div>
                             <div class="flex-1 col-4">
                                 <label for="depth">Глубина</label>
-                                <input type="text" id="depth" name="depth">
+                                <input type="number" id="depth" name="depth">
                             </div>
                         </div>
-                        <div class="d-flex row form_row">
-                            <div class="flex-1 col-6">
+                        <div class="d-flex form_row">
+                            <div class="flex-1">
                                 <label for="steel">Марка стали</label>
                                 <select name="steel" id="steel">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </div>
-                            <div class="flex-1 col-6">
-                                <label for="thickness">Толщина стенки металла</label>
-                                <select name="thickness" id="thickness">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
+                                    <option value="Ст3 1.5 мм">Ст3 1.5 мм</option>
+                                    <option value="Ст3 2 мм">Ст3 2 мм</option>
+                                    <option value="08ПС 1.5 мм">08ПС 1.5 мм</option>
+                                    <option value="08ПС 2 мм">08ПС 2 мм</option>
+                                    <option value="Aisi 430 1.5мм">Aisi 430 1.5мм</option>
                                 </select>
                             </div>
                         </div>
@@ -304,10 +302,17 @@
                             </div>
                             <div class="flex-1 col-6">
                                 <label for="phone">Ваш телефон</label>
-                                <input type="text" id="phone" name="phone">
+                                <input type="number" id="phone" maxlength = "11" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" name="phone">
                             </div>
                         </div>
-                        <button class="primary primary-wh w-100">Узнать стоимость</button>
+                        <button onclick="sendMessage(
+                            document.getElementById('width').value,
+                            document.getElementById('height').value,
+                            document.getElementById('depth').value,
+                            document.getElementById('steel').value,
+                            document.getElementById('name').value,
+                            document.getElementById('phone').value,
+                        )" class="primary primary-wh w-100">Узнать стоимость</button>
                     </div>
                 </div>
             </div>
@@ -337,7 +342,7 @@
                 <div class="flex-1 fb-item col-4">
                     <div class="d-flex">
                         <div class="">
-                            <img src="./img/ava1.jpg" class="ava" alt="">
+                            <img src="./img/ava2.jpg" class="ava" alt="">
                         </div>
                         <div class="flex-1">
                             <p class="fb-name">Владимир</p>
@@ -350,7 +355,7 @@
                 <div class="flex-1 fb-item col-4">
                     <div class="d-flex">
                         <div class="">
-                            <img src="./img/ava1.jpg" class="ava" alt="">
+                            <img src="./img/ava3.jpg" class="ava" alt="">
                         </div>
                         <div class="flex-1">
                             <p class="fb-name">Дмитрий</p>

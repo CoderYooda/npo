@@ -110,7 +110,7 @@ header .logo{
     color: #699BE8!important;
     background: #fff!important;
 }
-#contacts{
+#contacts .container{
     padding-top: 230px;
 }
 .contact{
@@ -129,38 +129,54 @@ header .logo{
 .mods{
     margin-top: 100px;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 #order_link{
     margin-top: 100px;
     position: relative;
 }
-#order_link:after{
+#order_link .container{
+    position: relative;
+    overflow: hidden;
+}
+#order_link .container:after{
     content: url(/img/lines1.svg);
     position: absolute;
     top: -256px;
-    left: 271px;
+    left: 0px;
     z-index: -122;
 }
 .mods{
     position: relative;
     overflow: hidden;
 }
-.mods:after{
+.mods .container{
+    position: relative;
+    overflow: hidden;
+}
+.mods .container:after{
     content: url(/img/lines2.svg);
     position: absolute;
     top: 118px;
-    left: -38px;
+    left: -300px;
     z-index: -122;
 }
 #contacts{
     position: relative;
     overflow: hidden;
 }
-#contacts:after{
+#contacts .container{
+    position: relative;
+    overflow: hidden;
+}
+#contacts .container:after{
     content: url(/img/lines2.svg);
     position: absolute;
-    top: 88px;
-    left: -38px;
+    top: 81px;
+    left: -304px;
     z-index: -122;
 }
 #about_us{
@@ -409,6 +425,9 @@ button.primary, a.primary{
 .ava{
     margin-right: 30px;
     border-radius: 10px;
+    width: 82px;
+    height: 82px;
+    object-fit: cover;
 }
 footer{
     background: #EDF5FF;
