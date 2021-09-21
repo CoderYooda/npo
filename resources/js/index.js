@@ -13,7 +13,7 @@ data = {
 
 
 
-window.sendMessage = function(sh, v, g, steel, tick, name, phone){
+window.sendMessage = function(sh, v, g, steel, name, phone){
 
     let data = new URLSearchParams();
     data.append('sh', sh);
