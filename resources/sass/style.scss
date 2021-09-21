@@ -29,7 +29,7 @@ header{
     padding: 20px 0;
 }
 header .logo{
-    background: url(./img/logo.svg) no-repeat;
+    background: url(/img/logo.svg) no-repeat;
     width: 162px;
     max-width: 162px;
     height: 52px;
@@ -50,37 +50,37 @@ header .logo{
     margin-top: 100px;
 }
 .fade-bg.var-1::before{
-    background: url(./img/var-1.svg) no-repeat;
+    background: url(/img/var-1.svg) no-repeat;
     width: 388px;
     height: 93px;
 }
 .fade-bg.var-2::before{
-    background: url(./img/var-2.svg) no-repeat;
+    background: url(/img/var-2.svg) no-repeat;
     width: 388px;
     height: 178px;
 }
 .fade-bg.var-3::before{
-    background: url(./img/var-3.svg) no-repeat;
+    background: url(/img/var-3.svg) no-repeat;
     width: 388px;
     height: 228px;
 }
 .fade-bg.var-4::before{
-    background: url(./img/var-4.svg) no-repeat;
+    background: url(/img/var-4.svg) no-repeat;
     width: 388px;
     height: 228px;
 }
 .fade-bg.var-5::before{
-    background: url(./img/var-5.svg) no-repeat;
+    background: url(/img/var-5.svg) no-repeat;
     width: 388px;
     height: 228px;
 }
 .fade-bg.var-6::before{
-    background: url(./img/var-6.svg) no-repeat;
+    background: url(/img/var-6.svg) no-repeat;
     width: 388px;
     height: 228px;
 }
 .fade-bg.var-7::before{
-    background: url(./img/var-7.svg) no-repeat;
+    background: url(/img/var-7.svg) no-repeat;
     width: 532px;
     height: 454px;
 }
@@ -88,12 +88,12 @@ header .logo{
     margin: 0;
 }
 .fade-bg.var-8::before{
-    background: url(./img/var-8.svg) no-repeat;
+    background: url(/img/var-8.svg) no-repeat;
     width: 388px;
     height: 420px;
 }
 .fade-bg.var-9::before{
-    background: url(./img/var-9.svg) no-repeat;
+    background: url(/img/var-9.svg) no-repeat;
     width: 388px;
     height: 420px;
 }
@@ -135,7 +135,7 @@ header .logo{
     position: relative;
 }
 #order_link:after{
-    content: url(./img/lines1.svg);
+    content: url(/img/lines1.svg);
     position: absolute;
     top: -256px;
     left: 271px;
@@ -146,7 +146,7 @@ header .logo{
     overflow: hidden;
 }
 .mods:after{
-    content: url(./img/lines2.svg);
+    content: url(/img/lines2.svg);
     position: absolute;
     top: 118px;
     left: -38px;
@@ -157,7 +157,7 @@ header .logo{
     overflow: hidden;
 }
 #contacts:after{
-    content: url(./img/lines2.svg);
+    content: url(/img/lines2.svg);
     position: absolute;
     top: 88px;
     left: -38px;
@@ -415,7 +415,7 @@ footer{
     margin-top: 100px;
 }
 footer .logo{
-    background: url(./img/logo.svg) no-repeat;
+    background: url(/img/logo.svg) no-repeat;
     width: 162px;
     max-width: 162px;
     height: 52px;
