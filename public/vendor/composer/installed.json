@@ -1,0 +1,49 @@
+[
+    {
+        "name": "sendpulse/rest-api",
+        "version": "1.0.24",
+        "version_normalized": "1.0.24.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sendpulse/sendpulse-rest-api-php.git",
+            "reference": "5b9b25f9543e66586cf91452a2eea1989e0e6ea2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sendpulse/sendpulse-rest-api-php/zipball/5b9b25f9543e66586cf91452a2eea1989e0e6ea2",
+            "reference": "5b9b25f9543e66586cf91452a2eea1989e0e6ea2",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2021-07-01T08:55:02+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Sendpulse\\RestApi\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Maksym Ustymenko",
+                "email": "m.ustymenko@sendpulse.com"
+            },
+            {
+                "name": "Alexey Moroz",
+                "email": "a.moroz@sendpulse.com"
+            }
+        ],
+        "description": "Sendpulse REST API client library",
+        "keywords": [
+            "api",
+            "rest",
+            "sendpulse"
+        ]
+    }
+]
