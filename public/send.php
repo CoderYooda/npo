@@ -21,7 +21,6 @@ $v = $_POST['v'];
 $g = $_POST['g'];
 $steel = $_POST['steel'];
 
-var_dump($data);
 
 /*
  * Example: Send mail using SMTP
